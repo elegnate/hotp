@@ -14,7 +14,7 @@ You need to 'CryptoSwift'.<br>
 <code>let testCode = 123123</code><br>
 <br>
 <code>if otp.Verify(testCode) {</code><br>
-  // success<br>
+&nbsp;&nbsp;&nbsp;&nbsp;// success<br>
 <code>} else {</code><br>
-  // fail<br>
+&nbsp;&nbsp;&nbsp;&nbsp;// fail<br>
 <code>}</code><br>
