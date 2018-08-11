@@ -5,9 +5,9 @@ You need to 'CryptoSwift'.<br>
 <br>
 <h2>Example</h2>
 <br>
-<h3>Gernerate OTP code</h3>
+<h3>Generate OTP code</h3>
 let otp  = OTP(msg: "plain message", password: "secret information", digits: 6, period, 180)<br>
-let code = otp.Gernerate()<br>
+let code = otp.Generate()<br>
 <br>
 <h3>Verify OTP code</h3>
 let otp  = OTP(msg: "plain message", password: "secret information", digits: 6, period, 180)<br>
