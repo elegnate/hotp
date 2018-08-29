@@ -13,11 +13,11 @@ let code = otp.Generate()
 
 ```swift
 let otp  = OTP(msg: "plain message", password: "secret information", digits: 6, period, 180)
-  let testCode = 123123
+let testCode = 123123
 
-  if otp.Verify(testCode) {
-    // success
-  } else {
-    // fail
-  }
+if otp.Verify(testCode) {
+  // success
+} else {
+  // fail
+}
 ```
