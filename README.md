@@ -10,8 +10,8 @@ let code = otp.Generate()
 ```
 
 ## Verify OTP code
-```
-swiftlet otp  = OTP(msg: "plain message", password: "secret information", digits: 6, period, 180)
+```swift
+let otp  = OTP(msg: "plain message", password: "secret information", digits: 6, period, 180)
   let testCode = 123123
 
   if otp.Verify(testCode) {
