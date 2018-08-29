@@ -1,20 +1,22 @@
 # hotp
+CryptoSwift가 필요합니다. PodFile에 CryptoSwift를 추가한 후 ```pod install``` 해주세요.
 <br>
-You need to 'CryptoSwift'.<br>
-<code>pod 'CryptoSwift'</code>
+# Example
 <br>
-<h2>Example</h2>
-<br>
-<h3>Generate OTP code</h3>
-<code>let otp  = OTP(msg: "plain message", password: "secret information", digits: 6, period, 180)</code><br>
-<code>let code = otp.Generate()</code><br>
-<br>
-<h3>Verify OTP code</h3>
-<code>let otp  = OTP(msg: "plain message", password: "secret information", digits: 6, period, 180)</code><br>
-<code>let testCode = 123123</code><br>
-<br>
-<code>if otp.Verify(testCode) {</code><br>
-&nbsp;&nbsp;&nbsp;&nbsp;// success<br>
-<code>} else {</code><br>
-&nbsp;&nbsp;&nbsp;&nbsp;// fail<br>
-<code>}</code><br>
+## Generate OTP code
+```swift
+let otp  = OTP(msg: "plain message", password: "secret information", digits: 6, period, 180)
+let code = otp.Generate()
+```
+
+## Verify OTP code
+```
+swiftlet otp  = OTP(msg: "plain message", password: "secret information", digits: 6, period, 180)
+  let testCode = 123123
+
+  if otp.Verify(testCode) {
+    // success
+  } else {
+    // fail
+  }
+```
